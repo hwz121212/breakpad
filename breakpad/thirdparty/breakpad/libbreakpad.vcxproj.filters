@@ -15,84 +15,81 @@
     </Filter>
   </ItemGroup>
   <ItemGroup>
-    <None Include="ReadMe.txt" />
-  </ItemGroup>
-  <ItemGroup>
-    <ClInclude Include="crash_generation_client.h">
+    <ClInclude Include="include\auto_critical_section.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="exception_handler.h">
+    <ClInclude Include="include\breakpad_types.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="minidump_generator.h">
+    <ClInclude Include="include\crash_generation_client.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="ipc_protocol.h">
+    <ClInclude Include="include\exception_handler.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="scoped_ptr.h">
+    <ClInclude Include="include\guid_string.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="string_utils-inl.h">
+    <ClInclude Include="include\ipc_protocol.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="breakpad_types.h">
+    <ClInclude Include="include\minidump_cpu_amd64.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="minidump_cpu_amd64.h">
+    <ClInclude Include="include\minidump_cpu_arm.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="minidump_cpu_arm.h">
+    <ClInclude Include="include\minidump_cpu_ppc.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="minidump_cpu_ppc.h">
+    <ClInclude Include="include\minidump_cpu_ppc64.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="minidump_cpu_ppc64.h">
+    <ClInclude Include="include\minidump_cpu_sparc.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="minidump_cpu_sparc.h">
+    <ClInclude Include="include\minidump_cpu_x86.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="minidump_cpu_x86.h">
+    <ClInclude Include="include\minidump_exception_linux.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="minidump_exception_linux.h">
+    <ClInclude Include="include\minidump_exception_mac.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="minidump_exception_mac.h">
+    <ClInclude Include="include\minidump_exception_solaris.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="minidump_exception_solaris.h">
+    <ClInclude Include="include\minidump_exception_win32.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="minidump_exception_win32.h">
+    <ClInclude Include="include\minidump_format.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="minidump_format.h">
+    <ClInclude Include="include\minidump_generator.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="auto_critical_section.h">
+    <ClInclude Include="include\scoped_ptr.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="guid_string.h">
+    <ClInclude Include="include\string_utils-inl.h">
       <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="crash_generation_client.cc">
+    <ClCompile Include="src\crash_generation_client.cc">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="exception_handler.cc">
+    <ClCompile Include="src\exception_handler.cc">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="minidump_generator.cc">
+    <ClCompile Include="src\guid_string.cc">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="string_utils.cc">
+    <ClCompile Include="src\minidump_generator.cc">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="guid_string.cc">
+    <ClCompile Include="src\string_utils.cc">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>
