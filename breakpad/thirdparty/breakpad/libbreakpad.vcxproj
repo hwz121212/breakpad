@@ -10,6 +10,35 @@
       <Platform>x64</Platform>
     </ProjectConfiguration>
   </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="include\auto_critical_section.h" />
+    <ClInclude Include="include\breakpad_types.h" />
+    <ClInclude Include="include\crash_generation_client.h" />
+    <ClInclude Include="include\exception_handler.h" />
+    <ClInclude Include="include\guid_string.h" />
+    <ClInclude Include="include\ipc_protocol.h" />
+    <ClInclude Include="include\minidump_cpu_amd64.h" />
+    <ClInclude Include="include\minidump_cpu_arm.h" />
+    <ClInclude Include="include\minidump_cpu_ppc.h" />
+    <ClInclude Include="include\minidump_cpu_ppc64.h" />
+    <ClInclude Include="include\minidump_cpu_sparc.h" />
+    <ClInclude Include="include\minidump_cpu_x86.h" />
+    <ClInclude Include="include\minidump_exception_linux.h" />
+    <ClInclude Include="include\minidump_exception_mac.h" />
+    <ClInclude Include="include\minidump_exception_solaris.h" />
+    <ClInclude Include="include\minidump_exception_win32.h" />
+    <ClInclude Include="include\minidump_format.h" />
+    <ClInclude Include="include\minidump_generator.h" />
+    <ClInclude Include="include\scoped_ptr.h" />
+    <ClInclude Include="include\string_utils-inl.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="src\crash_generation_client.cc" />
+    <ClCompile Include="src\exception_handler.cc" />
+    <ClCompile Include="src\guid_string.cc" />
+    <ClCompile Include="src\minidump_generator.cc" />
+    <ClCompile Include="src\string_utils.cc" />
+  </ItemGroup>
   <PropertyGroup Label="Globals">
     <ProjectGuid>{01828288-A8AD-4C2A-BB74-DD48FE698608}</ProjectGuid>
     <SccProjectName>
@@ -63,7 +92,7 @@
       <WarningLevel>Level3</WarningLevel>
       <Optimization>Disabled</Optimization>
       <PreprocessorDefinitions>WIN32;_DEBUG;_LIB;%(PreprocessorDefinitions)</PreprocessorDefinitions>
-      <AdditionalIncludeDirectories />
+      <AdditionalIncludeDirectories>include</AdditionalIncludeDirectories>
     </ClCompile>
     <Link>
       <SubSystem>Windows</SubSystem>
@@ -82,7 +111,7 @@
       <FunctionLevelLinking>true</FunctionLevelLinking>
       <IntrinsicFunctions>true</IntrinsicFunctions>
       <PreprocessorDefinitions>WIN32;NDEBUG;_LIB;%(PreprocessorDefinitions)</PreprocessorDefinitions>
-      <AdditionalIncludeDirectories />
+      <AdditionalIncludeDirectories>include</AdditionalIncludeDirectories>
     </ClCompile>
     <Link>
       <SubSystem>Windows</SubSystem>
@@ -94,38 +123,6 @@
       <AdditionalLibraryDirectories />
     </Lib>
   </ItemDefinitionGroup>
-  <ItemGroup>
-    <None Include="ReadMe.txt" />
-  </ItemGroup>
-  <ItemGroup>
-    <ClInclude Include="auto_critical_section.h" />
-    <ClInclude Include="breakpad_types.h" />
-    <ClInclude Include="crash_generation_client.h" />
-    <ClInclude Include="exception_handler.h" />
-    <ClInclude Include="guid_string.h" />
-    <ClInclude Include="ipc_protocol.h" />
-    <ClInclude Include="minidump_cpu_amd64.h" />
-    <ClInclude Include="minidump_cpu_arm.h" />
-    <ClInclude Include="minidump_cpu_ppc.h" />
-    <ClInclude Include="minidump_cpu_ppc64.h" />
-    <ClInclude Include="minidump_cpu_sparc.h" />
-    <ClInclude Include="minidump_cpu_x86.h" />
-    <ClInclude Include="minidump_exception_linux.h" />
-    <ClInclude Include="minidump_exception_mac.h" />
-    <ClInclude Include="minidump_exception_solaris.h" />
-    <ClInclude Include="minidump_exception_win32.h" />
-    <ClInclude Include="minidump_format.h" />
-    <ClInclude Include="minidump_generator.h" />
-    <ClInclude Include="scoped_ptr.h" />
-    <ClInclude Include="string_utils-inl.h" />
-  </ItemGroup>
-  <ItemGroup>
-    <ClCompile Include="crash_generation_client.cc" />
-    <ClCompile Include="exception_handler.cc" />
-    <ClCompile Include="guid_string.cc" />
-    <ClCompile Include="minidump_generator.cc" />
-    <ClCompile Include="string_utils.cc" />
-  </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
   </ImportGroup>
